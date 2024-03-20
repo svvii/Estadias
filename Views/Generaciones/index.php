@@ -31,12 +31,12 @@
                     <div class="form-group">
                         <label for="inicio">inicio</label>
                         <input type="hidden" id="id" name="id"> 
-                        <input id="inicio" class="form-control" type="date" name="inicio" placeholder="inicio">
+                        <input id="inicio" class="form-control" type="text" name="inicio" placeholder="inicio">
                     </div>
                 
                     <div class="form-group">
                         <label for="final">final</label>
-                        <input id="final" class="form-control" type="date" name="final" placeholder="inicio del Usuario">
+                        <input id="final" class="form-control" type="text" name="final" placeholder="inicio del Usuario">
                     </div>
                 <button class="btn btn-success" type="button" onclick="registrarGENE(event);" id="btnAccion">Registrar</button>
                 <button class="btn btn-secondary" type="button" data-dismiss="modal" >Cancelar</button>

@@ -10,7 +10,7 @@ class Roles extends Controller{
     public function index()
     {
         $id_user = $_SESSION ['id_usuario'];
-        $verificar = $this->model->verficarpermiso($id_user,'cajas');
+        $verificar = $this->model->verficarpermiso($id_user,'Roles');
         if (!empty($verificar)|| $id_user == 1) { 
             $this->views->getViews($this,"index") ;
         } else {

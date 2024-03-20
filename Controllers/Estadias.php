@@ -21,7 +21,7 @@ class Estadias extends Controller{
                 $data[$i]['acciones'] = '<div>
                 <button class="btn btn-primary" type="button" onclick="btnEditarES('.$data[$i]['id'].');"><i class = "fas fa-edit"></i></button>
                 <button class="btn btn-danger" type="button"  onclick="btnEliminarES('.$data[$i]['id'].');"><i class = "fas fa-trash-alt"></i></button>
-               </div>';
+                </div>';
             }else{
             $data[$i]['estado'] ='<span class="badge badge-danger">Inactivo</span>';
             $data[$i]['acciones'] = '<div>
@@ -69,11 +69,9 @@ class Estadias extends Controller{
                 if ($data =="Modificado") {
                     $msg = "Modificado";
                 }else{
-                    $msg = "Error al Modificado el lector";
+                    $msg = "Error al Modificado estadia";
                 }
-
             }
-
         }
         echo json_encode($msg, JSON_UNESCAPED_UNICODE);
         die();
@@ -107,5 +105,7 @@ class Estadias extends Controller{
        echo json_encode($msg,JSON_UNESCAPED_UNICODE);
        die();
     }
-    }
+
+}
+
 ?>

@@ -9,6 +9,7 @@
         <title>Iniciar Sesion</title>
         <link rel = "icon" href="http://utparral.edu.mx/logotipos/UTP.png">
         <link href="<?php echo base_url;?>Assets/css/styles.css" rel="stylesheet" />
+        <link href="<?php echo base_url;?>Assets/css/login.css" rel="stylesheet" />
         <script src="<?php echo base_url;?>Assets/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary" style="background: url('Assets/img/FONDO.jpeg') ;background-size:cover;">
@@ -19,7 +20,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Iniciar Sesion</h3></div>
+                                    <div class="card-header bg-light">
+                                        <h3 class="text-center font-weight-light my-4">Iniciar Sesion</h3></div>
                                     <div class="card-body">
                                         <form id="frmlogin">
                                             <div class="form-group">
@@ -57,3 +59,4 @@
         <script src="<?php echo base_url;?>Assets/js/login.js"></script>
     </body>
 </html>
+

@@ -1,5 +1,4 @@
 <?php include "Views/Templates/header.php";?>
-
 <ol class="breadcrumb mb-4">
 <li class="breadcrumb-item active">Estadias</li>
 </ol>
@@ -10,12 +9,12 @@
             <th>Id</th>
             <th>Nombre</th>
             <th>Matricula</th>
-            <th>titulo</th>
-            <th>codigo</th>
-            <th>estante</th>
-            <th>color</th>
-            <th>carrera</th>
-            <th>generacion</th>
+            <th>Titulo</th>
+            <th>Codigo</th>
+            <th>Estante</th>
+            <th>Color</th>
+            <th>Carrera</th>
+            <th>Generacion</th>
             <th>Estado</th>
             <th>Acciones</th>
         </tr>
@@ -34,6 +33,7 @@
             </div>
             <div class="modal-body">
                 <form method="post" id="frmestadia">
+                <input id="id" class="form-control" type="hidden" placeholder="id">
                 <div class="row">
                     <div class="col md-6">
                     <div class="form-group">
@@ -99,3 +99,4 @@
     </div>
 </div>
 <?php include "Views/Templates/footer.php";?>
+

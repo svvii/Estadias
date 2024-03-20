@@ -36,6 +36,18 @@ class Query extends Conexion{
         return $res;
 
     }
+    public function update(string $sql, array $datos)
+    {
+        $result = $this->con->prepare($sql); // Usar el parámetro $sql
+        $data = $result->execute($datos); // Usar el parámetro $datos
+        if ($data) {
+            $res = 1;
+        } else {
+            $res = 0;
+        }
+        return $res;
+    }
+    
 
 }
 

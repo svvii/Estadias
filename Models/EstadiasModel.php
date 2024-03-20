@@ -32,7 +32,7 @@ class EstadiasModel extends Query{
         } else {
             $res = "error";
         }
-    
+
         return $res;
     }
     
@@ -75,5 +75,6 @@ class EstadiasModel extends Query{
         return $data;
 
     }
+    
     }
 ?>

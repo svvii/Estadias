@@ -15,7 +15,7 @@ class GeneracionesModel extends Query{
     {
         $this->inicio = $inicio;
         $this->final = $final;
-        $verificar = "SELECT * FROM generaciones WHERE inicio = '$this->inicio'";
+        $verificar = "SELECT * FROM generaciones WHERE final = '$this->final'";
         $existe = $this->select($verificar);
         if (empty($existe)) {
             # code...

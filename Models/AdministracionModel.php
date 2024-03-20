@@ -31,7 +31,7 @@ class AdministracionModel extends Query
     }
     public function getreporte()
     {
-        $sql = "SELECT * FROM estadias";
+        $sql = "SELECT * FROM documentos";
         $data = $this->select($sql);
         return $data; 
     }
@@ -41,6 +41,11 @@ class AdministracionModel extends Query
        $data = $this->selectAll($sql);
        return $data;
     }
-
+    public function getprestamos($fecha)
+    {
+        $sql = "SELECT e.nombre AS nombre_estudiante, p.id, p.buscar_estudiante, p.fecha_devolucion, p.estado FROM prestamosbiblio p INNER JOIN estudiantes e ON e.id = p.buscar_estudiante WHERE p.fecha_devolucion < '$fecha' AND p.estado = 1;";
+        $data = $this->selectAll($sql);
+        return $data; 
+    }     
 }
 ?>

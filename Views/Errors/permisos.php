@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>No Tienes Permisos</title>
-    <link href="<?php echo base_url; ?>Assets/css/estilos.css" rel="stylesheet">
+    <title>No tienes permisos</title>
+    <link rel = "icon" href="http://utparral.edu.mx/logotipos/UTP.png">
+    <link rel="stylesheet" href="<?php echo base_url; ?>Assets/css/error.css">
 </head>
 <body>
     
 <div class="content">
-    <a href="<?php echo base_url; ?>Administracion/home" class="pagina">Sistema Integral Para El Control De Estadias</a>
-    <hr>
-    <span class="tags">No Tienes Permisos </span>
-    <p>El administrador no te asigno el permiso a este modulo</p>
+<img src="../../estadias/Assets/img/loboerror.png" style="width: 326px; height: 244px; float: left; padding: 80px;">
+<span class="tags">No tienes permisos</span> <hr>
+    <a href="<?php echo base_url; ?>Administracion/home" class="pagina">Regresar</a>
+   
+    <p>El administrador no te asigno este modulo</p>
 </div>
-
 </body>
 </html>

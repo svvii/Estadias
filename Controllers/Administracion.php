@@ -24,9 +24,11 @@ class Administracion extends Controller{
     public function home()
     {
         $data['usuarios'] = $this->model->getDatos('usuarios');
-        $data['lectores']  = $this->model->getDatos('lectores');
-        $data['prestamos']  = $this->model->getDatos('prestamos');
-        $data['estadias']  = $this->model->getDatos('estadias');
+        $data['caja']  = $this->model->getDatos('caja');
+        $data['carreras']  = $this->model->getDatos('carreras');
+        $data['prestamosbiblio']  = $this->model->getDatos('prestamosbiblio');
+        $data['librosb']  = $this->model->getDatos('librosb');
+        $data['documentos']  = $this->model->getDatos('documentos');
         $this->views->getViews($this,"home", $data) ;
     }
     public function modificar()
@@ -52,5 +54,7 @@ class Administracion extends Controller{
         die();
       
     }
+
+
 }
 

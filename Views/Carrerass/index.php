@@ -8,7 +8,7 @@
     <thead class="thead-dark">
         <tr>
             <th>Id</th>
-            <th>Nombre</th>
+            <th>Nombre de la Carrera</th>
             <th>Abreviatura</th>
             <th>Estado</th>
             <th>Acciones</th>

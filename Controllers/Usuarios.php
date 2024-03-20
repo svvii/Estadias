@@ -2,15 +2,16 @@
 class Usuarios extends Controller{
     public function __construct(){
         session_start();
-        if (empty( $_SESSION['activo'] )) {
-            header("location:" .base_url);
-        }
+        
         parent::__construct();
     }
     public function index()
     {
         $id_user = $_SESSION ['id_usuario'];
         $verificar = $this->model->verficarpermiso($id_user,'lectores');
+        if (empty( $_SESSION['activo'] )) {
+            header("location:" .base_url);
+        }
         $data ['cajas'] = $this->model->getCajas();
         if (!empty($verificar)|| $id_user == 1) { 
             $this->views->getViews($this,"index", $data) ;

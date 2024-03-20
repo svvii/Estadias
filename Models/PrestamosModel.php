@@ -13,7 +13,7 @@ class PrestamosModel extends Query{
     }
     public function getPrestamos()
     {
-        $sql = "SELECT * FROM prestamos";
+        $sql = "SELECT p.*, c.nombre as lectror FROM prestamos p INNER JOIN lectores c ON p.id_lector = c.id;";
         $data = $this->selectAll($sql);
         return $data;
     }
